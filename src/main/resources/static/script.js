@@ -66,7 +66,7 @@ playerNameCtx.fillText(player2 + ": " + player2Score, 10, 60);
 
 var boolean = true;
 
-canvas_a.addEventListener('click', function testF(x, y) {
+canvas_a.addEventListener('click', function clickSquare() {
 
     if (!gameOver) {
         if (!checkWinCondition()) {
@@ -76,7 +76,7 @@ canvas_a.addEventListener('click', function testF(x, y) {
     }
 
 }, false);
-canvas_b.addEventListener('click', function testF(x, y) {
+canvas_b.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -86,7 +86,7 @@ canvas_b.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_c.addEventListener('click', function testF(x, y) {
+canvas_c.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -96,7 +96,7 @@ canvas_c.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_d.addEventListener('click', function testF(x, y) {
+canvas_d.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -106,7 +106,7 @@ canvas_d.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_e.addEventListener('click', function testF(x, y) {
+canvas_e.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -116,7 +116,7 @@ canvas_e.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_f.addEventListener('click', function testF(x, y) {
+canvas_f.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -126,7 +126,7 @@ canvas_f.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_g.addEventListener('click', function testF(x, y) {
+canvas_g.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -136,7 +136,7 @@ canvas_g.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_h.addEventListener('click', function testF(x, y) {
+canvas_h.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -146,7 +146,7 @@ canvas_h.addEventListener('click', function testF(x, y) {
 }
 
 }, false);
-canvas_i.addEventListener('click', function testF(x, y) {
+canvas_i.addEventListener('click', function clickSquare() {
     if (!gameOver) {
 
     if (!checkWinCondition()) {
@@ -349,11 +349,4 @@ function drawText(canvas_context) {
     canvas_context.fillText(player2Type, 14, 37);
     boolean = true;
     }
-}
-
-function testJS() {
-    var b = document.getElementById('name').value,
-        url = 'file:///D:/Programming/tomcat/webapps/examples/welcome.html' + encodeURIComponent(b);
-
-    document.location.href = url;
 }
