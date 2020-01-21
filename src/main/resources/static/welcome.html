@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Welcome to Tic Tac Toe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<h1>Welcome to Tic Tac Toe</h1>
+<form name = "form1" action="game.html" method="get">
+    <p>Input player names</p>
+    <p>Player 1: <input id="playerOneName" type="text" id="playerOneName" name="playerOneName" value="" /></p>
+    <p>Player 2: <input id="playerTwoName" type="text" id="playerTwoName" name="playerTwoName" value="" /></p>
+    <p><input type="submit" value="Submit"  onclick="savePlayers();"/> <input type="reset" value="Reset" /></p>
+    <script>
+        const playerOneName = document.getElementById('playerOneName');
+        const playerTwoName = document.getElementById('playerTwoName');
+
+        function savePlayers() {
+            sessionStorage.setItem('playerOneKey', playerOneName.value);
+            sessionStorage.setItem('playerTwoKey', playerTwoName.value);
+        }
+    </script>
+</form>
+</body>
+</html>
